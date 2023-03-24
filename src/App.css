@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+	width: 100%;
+	height: 100px;
+	background-color: rgb(18, 16, 43);
+}
+.header h1 {
+	color: white;
+	text-align: center;
+	padding-top: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.gameArea {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.tower {
+	height: 50%;
+	margin-top: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stick {
+	width: 10px;
+	height: 100%;
+	background-color: #aaa;
+	position: absolute;
+}
+
+.boxes {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.towerArea {
+	min-width: 100px;
+}
+
+.gameClear {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5em;
+	font-weight: 700;
 }
